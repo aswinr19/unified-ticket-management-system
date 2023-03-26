@@ -1,0 +1,27 @@
+{
+  "name": "unified-ticket-management-system",
+  "version": "1.0.0",
+  "description": "A web and mobile app-based ticket management system of the department of tourism and DTPC.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aswinr19/unified-ticket-management-system.git"
+  },
+  "keywords": [
+    "Node",
+    "React",
+    "MongoDB",
+    "TypeScript",
+    "API",
+    "CRUD"
+  ],
+  "author": "Aswin R",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aswinr19/unified-ticket-management-system/issues"
+  },
+  "homepage": "https://github.com/aswinr19/unified-ticket-management-system#readme"
+}
