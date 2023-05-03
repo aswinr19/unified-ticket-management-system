@@ -1,5 +1,5 @@
 # unified-ticket-management-system
-A backend for  unified ticket management system . 
+Backend for  unified ticket management system. 
 
 
 The proposed Unified Ticket Management System, is a centralized web and mobile app system that allows the department and its 
