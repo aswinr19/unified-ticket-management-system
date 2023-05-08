@@ -8,3 +8,23 @@ tasks such as issuing tickets to customers (for multiple activities), tracking t
 The system will also support a parking assistance system in selected destinations as well. The solution can help in improving the efficiency 
 and effectiveness of the department 
 and ensure that tourists (domestic/international) have a positive experience at the destination.
+
+
+
+## Getting Started
+
+First clone this repository, install the dependencies, and setup your .env file.
+
+```
+git clone https://github.com/aswinr19/unified-ticket-management-system.git
+cd unified-ticket-management-system
+npm install
+cp .env.example .env
+```
+
+To run the project ,
+
+```
+npm run start
+
+```
