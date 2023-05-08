@@ -21,6 +21,32 @@ app.post('/signin',(req: Request , res: Response) => {
   const { email , password } = req.body;
 });
 
-app.post('/destinations', (req: Request , res: Response) => {
-  
+app.get('/events',(req: Request , res: Response) => {
+  //use query parameters to fetch user preferences.
 });
+
+app.post('book-event',(req: Request , res: Response) => {
+  
+  const {  
+      eventName,
+      eventDate,
+      eventLocation,
+      eventType,
+      numTickets,
+      ticketType,
+      ticketPrice,
+      seatingPreference,
+      userName,
+      userEmail,
+      userPhone,
+      paymentMethod
+            } = req.body;
+
+
+});
+
+
+
+
+
+
