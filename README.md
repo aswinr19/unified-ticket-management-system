@@ -17,8 +17,11 @@ First clone this repository, install the dependencies, and setup your .env file.
 
 ```
 git clone https://github.com/aswinr19/unified-ticket-management-system.git
+
 cd unified-ticket-management-system
+
 npm install
+
 cp .env.example .env
 ```
 
@@ -26,5 +29,4 @@ To run the project ,
 
 ```
 npm run start
-
 ```
