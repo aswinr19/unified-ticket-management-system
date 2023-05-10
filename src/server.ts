@@ -12,7 +12,7 @@ mongoose
     .then(() => {
         Logging.info('Connected to mongoDB.');
     })
-    .catch((error) => {
+    .catch((error:any) => {
         Logging.error('Unable to connect:');
         Logging.error(error);
     });
@@ -35,3 +35,6 @@ const StartServer = () => {
         next();
     });
 };
+
+
+

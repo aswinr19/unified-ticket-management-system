@@ -7,9 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rimraf build && npx tsc",
     "prestart": "npm run build",
-    "start": "nodemon build/index.js",
+    "start": "nodemon build/server.js",
     "preserve": "npm run build",
-    "serve": "concurrently \"npx tsc -w\" \"nodemon build/index.js\""
+    "serve": "concurrently \"npx tsc -w\" \"nodemon build/server.js\""
   },
   "repository": {
     "type": "git",
@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/aswinr19/unified-ticket-management-system#readme",
   "dependencies": {
-    "chalk": "^5.2.0",
+    "chalk": "^4.1.2",
     "concurrently": "^8.0.1",
     "cookie-parser": "^1.4.6",
     "dotenv": "^16.0.3",
@@ -43,6 +43,7 @@
   "devDependencies": {
     "@types/express": "^4.17.17",
     "@types/node": "^20.1.1",
+    "esm": "^3.2.25",
     "nodemon": "^2.0.22",
     "typescript": "^5.0.4"
   }
