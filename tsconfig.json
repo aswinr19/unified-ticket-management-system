@@ -8,9 +8,6 @@
         "forceConsistentCasingInFileNames": true,
         "strict": true,
         "skipLibCheck": true,
-        "moduleResolution": "nodenext",
-        "noEmit": true,
-        "allowImportingTsExtensions": true
     },
       "include": ["src/**/*"]
 }
