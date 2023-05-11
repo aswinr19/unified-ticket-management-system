@@ -1,12 +1,33 @@
 {
     "compilerOptions": {
         "target": "es2016",
+        "module": "commonjs",
+        "rootDir": "./src",
         "outDir": "./build",
         "esModuleInterop": true,
         "forceConsistentCasingInFileNames": true,
         "strict": true,
         "skipLibCheck": true,
-        "moduleResolution": "nodenext"
+        "moduleResolution": "nodenext",
+        "noEmit": true,
+        "allowImportingTsExtensions": true
     },
       "include": ["src/**/*"]
 }
+
+// {
+//     "compilerOptions": {
+//         "target": "es6",
+//         "module": "commonjs",
+//         "allowJs": true,
+//         "outDir": "./build",
+//         "rootDir": "./src",
+//         "esModuleInterop": true,
+//         "strict": true,
+//         "moduleResolution": "nodenext",
+//         "forceConsistentCasingInFileNames": true,
+//         "noEmit": true,
+//         "allowImportingTsExtensions": true
+//     },
+//     "include": ["./src/**/*"]
+// }

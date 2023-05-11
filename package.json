@@ -1,50 +1,51 @@
 {
-  "name": "unified-ticket-management-system",
-  "version": "1.0.0",
-  "description": "Backend for  unified ticket management system.",
-  "main": "src/server.ts",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rimraf build && npx tsc",
-    "prestart": "npm run build",
-    "start": "nodemon build/server.js",
-    "preserve": "npm run build",
-    "serve": "concurrently \"npx tsc -w\" \"nodemon build/server.js\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/aswinr19/unified-ticket-management-system.git"
-  },
-  "keywords": [
-    "Node",
-    "React",
-    "MongoDB",
-    "TypeScript",
-    "API",
-    "CRUD"
-  ],
-  "author": "Aswin R",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/aswinr19/unified-ticket-management-system/issues"
-  },
-  "homepage": "https://github.com/aswinr19/unified-ticket-management-system#readme",
-  "dependencies": {
-    "chalk": "^4.1.2",
-    "concurrently": "^8.0.1",
-    "cookie-parser": "^1.4.6",
-    "dotenv": "^16.0.3",
-    "express": "^4.18.2",
-    "joi": "^17.9.2",
-    "jsonwebtoken": "^9.0.0",
-    "mongoose": "^7.1.0",
-    "rimraf": "^5.0.0"
-  },
-  "devDependencies": {
-    "@types/express": "^4.17.17",
-    "@types/node": "^20.1.1",
-    "esm": "^3.2.25",
-    "nodemon": "^2.0.22",
-    "typescript": "^5.0.4"
-  }
+    "name": "unified-ticket-management-system",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "Backend for  unified ticket management system.",
+    "main": "src/server.ts",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "rimraf build && npx tsc",
+        "prestart": "npm run build",
+        "start": "node build/server.js",
+        "preserve": "npm run build",
+        "serve": "concurrently \"npx tsc -w\" \"node build/server.js\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/aswinr19/unified-ticket-management-system.git"
+    },
+    "keywords": [
+        "Node",
+        "React",
+        "MongoDB",
+        "TypeScript",
+        "API",
+        "CRUD"
+    ],
+    "author": "Aswin R",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/aswinr19/unified-ticket-management-system/issues"
+    },
+    "homepage": "https://github.com/aswinr19/unified-ticket-management-system#readme",
+    "dependencies": {
+        "chalk": "^4.1.2",
+        "concurrently": "^8.0.1",
+        "cookie-parser": "^1.4.6",
+        "dotenv": "^16.0.3",
+        "express": "^4.18.2",
+        "joi": "^17.9.2",
+        "jsonwebtoken": "^9.0.0",
+        "mongoose": "^7.1.0",
+        "rimraf": "^5.0.0"
+    },
+    "devDependencies": {
+        "@types/express": "^4.17.17",
+        "@types/node": "^20.1.1",
+        "esm": "^3.2.25",
+        "nodemon": "^2.0.22",
+        "typescript": "^5.0.4"
+    }
 }
