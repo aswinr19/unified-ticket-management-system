@@ -1,5 +1,5 @@
 import { NextFunction, Request, Response } from 'express';
 import mongoose from 'mongoose';
-import Event from '../models/Event';
+import Attraction from '../models/Attraction';
 
 export default {};

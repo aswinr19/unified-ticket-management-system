@@ -20,7 +20,7 @@ const signup = (req: Request , res: Response , next: NextFunction) => {
   .catch((error) => res.status(500).json({ error }));
 };
 
-const signin = (req: Request , res: Response , next: nextFunction) => {
+const signin = (req: Request , res: Response , next: NextFunction) => {
 
   const { email , password } = req.body;
 

@@ -5,7 +5,6 @@ import { config } from './config/config';
 import Logging from './library/Logging';
 import userRoutes from './routes/User';
 
-
 const router = express();
 
 //connect mongodb
@@ -61,7 +60,7 @@ const startServer = () => {
     });
 
     //Routes
-    router.use('/users',userRoutes);
+    router.use('/users', userRoutes);
 
     //Healthcheck
     router.get('/ping', (req, res, next) => {
