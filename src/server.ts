@@ -3,6 +3,8 @@ import http from 'http';
 import mongoose from 'mongoose';
 import { config } from './config/config';
 import Logging from './library/Logging';
+import userRoutes from './routes/User';
+
 
 const router = express();
 
@@ -11,6 +13,7 @@ mongoose
     .connect(config.mongo.url, { retryWrites: true, w: 'majority' })
     .then(() => {
         Logging.info('Connected to mongoDB.');
+        startServer();
     })
     .catch((error: any) => {
         Logging.error('Unable to connect:');
@@ -18,7 +21,7 @@ mongoose
     });
 
 // only start server if connection is succesful
-const StartServer = () => {
+const startServer = () => {
     router.use((req, res, next) => {
         //Log the request
         Logging.info(
@@ -58,6 +61,7 @@ const StartServer = () => {
     });
 
     //Routes
+    router.user('/users',userRoutes);
 
     //Healthcheck
     router.get('/ping', (req, res, next) => {
@@ -70,5 +74,9 @@ const StartServer = () => {
         Logging.error(error);
 
         return res.status(404).json({ message: error.message });
+    });
+
+    http.createServer(router).listen(config.server.port, () => {
+        Logging.info(`Listening on http://localhost:${config.server.port}.`);
     });
 };
