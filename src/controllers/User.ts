@@ -2,7 +2,7 @@ import { NextFunction , Request , Response } from 'express';
 import mongoose from 'mongoose';
 import User from '../models/User';
 
-const signup = (req: Request , res: Response , next: nextFunction) => {
+const signup = (req: Request , res: Response , next: NextFunction) => {
 
   const { name , email , phone , password } = req.body;
 
