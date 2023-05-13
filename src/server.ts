@@ -61,7 +61,7 @@ const startServer = () => {
     });
 
     //Routes
-    router.user('/users',userRoutes);
+    router.use('/users',userRoutes);
 
     //Healthcheck
     router.get('/ping', (req, res, next) => {
