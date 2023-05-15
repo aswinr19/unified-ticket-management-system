@@ -2,9 +2,9 @@ import mongoose , { Document , Schema } from 'mongoose';
 
 
 export interface User {
-  firstname: string,
-  lastname: string,
-  username: string,
+  firstName: string,
+  lastName: string,
+  userName: string,
   email: string,
   phone: number,
   password: string,

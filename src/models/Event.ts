@@ -1,6 +1,13 @@
 import mongoose, { Document, Schema } from 'mongoose';
 
-export interface Event {}
+export interface Event {
+  eventName: string,
+  eventDate: string,
+  venue: string,
+  category: string,
+  totalSeats: number,
+  seatCategory: number
+}
 
 export interface EventModel extends Event, Document {}
 
