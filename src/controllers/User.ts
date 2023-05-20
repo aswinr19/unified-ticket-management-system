@@ -36,6 +36,15 @@ const readUser = async (req: Request, res: Response, next: NextFunction) => {
 
 const readAllUser = (req: Request, res: Response, next: NextFunction) => {
 
+  try {
+  
+    const users = User.find();
+
+    res.status(200).json({ users });
+  }
+  catch(error){
+    res.status(500).json({ error });
+  }
 };
 
 const updateUser = (req: Request, res: Response, next: NextFunction) => {};
