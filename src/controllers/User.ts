@@ -1,5 +1,4 @@
 import { NextFunction, Request, Response } from 'express';
-import mongoose from 'mongoose';
 import { generateFromEmail } from 'unique-username-generator';
 import User from '../models/User';
 
@@ -27,12 +26,27 @@ const createUser = async (req: Request, res: Response, next: NextFunction) => {
     }
 };
 
-const readUser = async (req: Request, res: Response, next: NextFunction) => {};
+const readUser = async (req: Request, res: Response, next: NextFunction) => {
+    const id = req.params.id;
+
+    try {
+        const user = await User.findById(
+            id,
+            '-password -createdAt -updatedAt -__v'
+        );
+
+        res.status(200).json({ user });
+    } catch (error) {
+        res.status(500).json({ error });
+    }
+};
 
 const readAllUser = async (req: Request, res: Response, next: NextFunction) => {
     try {
-        const users = await User.find( {},
-            '-password -_id -createdAt -updatedAt -__v ');
+        const users = await User.find(
+            {},
+            '-password -createdAt -updatedAt -__v '
+        );
         res.status(200).json({ users });
     } catch (error) {
         res.status(500).json({ error });
