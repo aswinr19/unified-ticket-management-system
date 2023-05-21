@@ -31,9 +31,8 @@ const readUser = async (req: Request, res: Response, next: NextFunction) => {};
 
 const readAllUser = async (req: Request, res: Response, next: NextFunction) => {
     try {
-        const users = await User.find().select(
-            '-password -_id -createdAt -updatedAt -__v '
-        );
+        const users = await User.find( {},
+            '-password -_id -createdAt -updatedAt -__v ');
         res.status(200).json({ users });
     } catch (error) {
         res.status(500).json({ error });
