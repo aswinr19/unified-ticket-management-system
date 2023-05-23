@@ -1,5 +1,4 @@
 import { NextFunction, Request, Response } from 'express';
-import mongoose from 'mongoose';
 import Event from '../models/Event';
 
 const createEvent = (req: Request, res: Response, next: NextFunction) => {};

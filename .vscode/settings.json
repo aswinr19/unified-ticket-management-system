@@ -1,7 +1,9 @@
 {
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.bracketPairColorization.enabled": true,
-  "editor.formatOnSave": true,
-  "editor.formatOnPaste": true,
-  "editor.wordWrap": "on"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.wordWrap": "on",
+    "spellright.language": ["en-US-10-1."],
+    "spellright.documentTypes": ["markdown", "latex", "plaintext", "typescript"]
 }
